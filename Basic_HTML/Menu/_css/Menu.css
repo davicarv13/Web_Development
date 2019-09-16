@@ -1,0 +1,43 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+
+
+.main_header{
+	width: 100vw;
+	background-image: url("_images/main_header_background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.main_header > h1{
+	text-transform: uppercase;
+	font-size: 18pt;
+	margin: 100px;
+}
+
+.menu{
+	width: 100%;
+	display: flex;
+	flex-wrap: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.nav_menu{
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.nav_menu li{
+	text-transform: uppercase;	
+}
