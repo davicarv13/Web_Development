@@ -33,9 +33,9 @@
 
 		<div>
 			<h1>Checkbox Input</h1>
-			<label for = "checkbox1">Java: </label><input type = "checkbox" name = "java" id = "checkbox1">		
-			<label for = "checkbox2">C: </label><input type = "checkbox" name = "c" id = "checkbox2">		
-			<label for = "checkbox3">Python: </label><input type = "checkbox" name = "python" id = "checkbox3">		
+			<label for = "checkbox1">Java: </label><input type = "checkbox" name = "linguagens" value = "Java" id = "checkbox1" checked>		
+			<label for = "checkbox2">C: </label><input type = "checkbox" name = "linguagens" value = "C" id = "checkbox2">		
+			<label for = "checkbox3">Python: </label><input type = "checkbox" name = "linguagens" value = "Python" id = "checkbox3">		
 		</div>
 
 		<div>
@@ -45,7 +45,7 @@
 
 		<div>
 			<h1>Phonenumber Input</h1>
-			<label for = "phone">Phonenumber:</label><input type = "tel" name = "phone" id = "phone" placeholder = "Enter your phonenumber">
+			<label for = "phone">Phonenumber:</label><input type = "tel" name = "phone" id = "phone" placeholder = "Enter your phonenumber" pattern = "[0-9]{9}" title = "Phone number must have 9 digits">
 		</div>
 
 		<div>
@@ -72,6 +72,56 @@
 			<h1>Textarea Input</h1>
 			<label for = "textarea">Textarea:</label><textarea id = "textarea" name = "textarea" rows = "5" cols = "50"></textarea>
 		</div>
+
+		<div>
+			<h1>Radio Input</h1>
+			<label for = "radio1">Junior: </label><input type = "radio" name = "level" value = "Junior" id = "radio1" checked><br>
+			<label for = "radio2">Pleno: </label><input type = "radio" name = "level" value = "Pleno" id = "radio2"><br>
+			<label for = "radio3">Senior: </label><input type = "radio" name = "level" value = "Senior" id = "radio3"><br>	
+		</div>
+
+		<div>
+			<h1>File Input</h1>
+			<label for = "file">Choose file:</label><input type = "file" name = "file" id = "file">
+		</div>
+
+		<div>
+			<label for = "cor">Cor:</label><input type = "color" name = "cor" id = "cor">
+		</div>
+
+		<div>
+			<h1>Dropdown List</h1>
+			<select id = "list" name = "city">
+				<optgroup label = "Rio de Janeiro">
+					<option value = "RJ" selected="">Campos</option>
+				</optgroup>
+				<optgroup label = "Sao Paulo">
+					<option value = "SP">Santos</option>	
+				</optgroup>
+			</select>
+		</div>
+
+		<div>
+			<h1>Fieldset Input</h1>
+			<fieldset>
+				<legend>Course</legend>
+				<label for = "course">Enter your course:</label><input type = "text" name = "course" id = "course">
+			</fieldset>
+		</div>
+
+		<div>
+			<h1>Datalist</h1>
+			<datalist id = "raceList">
+				<option value = "White">
+				<option value = "Black">
+				<option value = "Asian">
+			</datalist>
+
+			<label for = "race">Race:</label><input type="text" name="race" list = "raceList" id = "race">
+		</div>
+
+		<input type = "Reset" value = "Reset Values"></input>
+		<input type="submit" name="submit">
 	</form>
 </body>
 </html>
