@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+	<style type="text/css">
+		
+		.form{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		.form > div{
+			border: 1px solid black;
+			padding:20px;
+			margin-top: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<form class = "form" action = "#" method = "POST">
+		<div>
+			<h1>Text Input</h1>
+			<label for = "name">Name: </label><input type = "text" name = "name" id = "name" placeholder = "Type your Name">		
+		</div>
+
+		<div>
+			<h1>Password Input</h1>
+			<label for = "pass">Password: </label><input type = "password" name = "pass" id = "pass" placeholder = "Type your Password">		
+		</div>
+
+		<div>
+			<h1>Checkbox Input</h1>
+			<label for = "checkbox1">Java: </label><input type = "checkbox" name = "java" id = "checkbox1">		
+			<label for = "checkbox2">C: </label><input type = "checkbox" name = "c" id = "checkbox2">		
+			<label for = "checkbox3">Python: </label><input type = "checkbox" name = "python" id = "checkbox3">		
+		</div>
+
+		<div>
+			<h1>Number Input</h1>
+			<label for = "age">Age:</label><input type = "number" name = "age" id = "age" placeholder = "Enter your age">
+		</div>
+
+		<div>
+			<h1>Phonenumber Input</h1>
+			<label for = "phone">Phonenumber:</label><input type = "tel" name = "phone" id = "phone" placeholder = "Enter your phonenumber">
+		</div>
+
+		<div>
+			<h1>Email Input</h1>
+			<label for = "email">Email</label><input type = "email" name = "email" id = "email" placeholder = "Enter your email">
+		</div>
+
+		<div>
+			<h1>URL Input</h1>
+			<label for = "url">Enter your Facebook's link </label><input type = "url" name = "url" id = "url" placeholder = "Enter your Facebook's link">
+		</div>
+
+		<div>
+			<h1>Range Input</h1>
+			<label for = "range">Choose your programming level:</label><input type = "range" name = "range" id = "range" min="1" max="5" step="1">
+		</div>
+
+		<div>
+			<h1>Search Input</h1>
+			<label for = "search">Search:</label><input type = "search" name = "search" id = "search" placeholder = "Search">
+		</div>
+	</form>
+</body>
+</html>
