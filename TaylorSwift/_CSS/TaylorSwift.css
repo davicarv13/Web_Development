@@ -1,0 +1,151 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none; 
+	color: white;
+	font-family: sans-serif;
+}
+
+@font-face{
+	font-family: taylorswift;
+	src: url(_FONT/Satisfaction.ttf);
+}
+
+.index_nav{
+	background-image: url(../_IMAGES/pink_cloud.jpg);
+	background-size: cover;
+	background-position: center;
+	width:100%;
+	font-size: 14pt;
+	padding: 35px 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.index_nav a h1{
+	font-family: taylorswift;
+}
+
+.index_nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 30%;	
+}
+
+.index_nav ul a{
+	border: 1px solid #fff;
+	border-radius: 25px;
+	padding: 5px 30px;	
+	transition: 1s;
+}
+
+.index_nav ul a li{
+	transition: 1.5s;
+}
+
+.index_nav ul a:hover{
+	background-color: #fff;
+	transform: scale(1.2, 1.2);
+}
+
+.index_nav ul a:hover li{
+	color: #ffbae6;
+}
+
+.index_header{
+	background-image: url(../_IMAGES/index_header_background.jpg);
+	background-position: top;
+	background-size: cover;
+	width: 100vw;
+	height:60vh;
+}
+
+.albums{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-image: url(../_IMAGES/pink_cloud.jpg);
+	background-size: cover;
+	background-position: bottom;
+}
+
+.albums figure{
+	width:20vw;
+	margin: 30px 0;
+	height: auto;
+	transition: 1s;
+}
+
+.albums figure img{
+	width: 100%;
+	height: 100%;
+}
+
+.albums figure:hover{
+	transform: scale(1.2, 1.2);
+}
+
+footer{
+	background-image: url(../_IMAGES/pink_cloud.jpg);
+	background-size: cover;
+	background-position: bottom;
+	width: 100vw;
+	padding:50px;
+	position: relative;
+}
+
+footer p{
+	position: absolute;
+	left:50%;
+	top:50%;
+	font-size: 14pt;
+	transform: translate(-50%, -50%);
+}
+
+.lover_tour_dates{
+	background-image: url(../_IMAGES/pink_cloud.jpg);
+	display: flex;
+	align-items: center;
+	padding: 30px;	
+	flex-direction: column
+}
+
+.lover_tour_dates table caption{
+	font-size: 20pt;
+	margin-bottom: 8px;	
+}
+
+.lover_tour_dates table tr th, td{
+	padding: 20px 80px;
+	color: #ff5ef4;
+	border: 1px solid #fff;
+}
+
+.lover_tour_dates > a{
+	background-color: #2d46ff;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 18px;
+	padding: 10px 30px;
+	margin-top: 25px;
+	transition: 1s;
+}
+
+.lover_tour_dates > a:hover{
+	transform: scale(1.2, 1.2);
+}
+
+@media screen and (max-width: 500px){
+	.index_nav{
+		flex-direction: column;
+	}
+
+	.index_nav ul{
+		flex-direction: column;
+	}
+}
