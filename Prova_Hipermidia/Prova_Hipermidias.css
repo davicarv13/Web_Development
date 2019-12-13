@@ -190,6 +190,10 @@ nav ul{
 	margin-bottom: 20px;
 }
 
+.calendar div a{
+	text-decoration: underline;
+}
+
 
 .date_table tr td:nth-of-type(1){
 	text-align: right;
