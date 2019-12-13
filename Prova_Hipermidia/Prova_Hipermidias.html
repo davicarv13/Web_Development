@@ -2,60 +2,53 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="Prova_Hipermidias.css">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<script src="https://kit.fontawesome.com/1ff1755439.js" crossorigin="anonymous"></script>
 	<title>Prova Hipermidias</title>
+	<script src="https://kit.fontawesome.com/1ff1755439.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+  	<link rel="stylesheet" type="text/css" href="Prova_Hipermidias.css">
+  	<link rel="stylesheet" type="text/css" href="Prova_Hipermidias_Carousel.css">
+   	
 </head>
 <body>
 	<header>
-		<div class = "header_box">
-			<div class = "logo">
-			
-			</div>
-			<div class = "nav">
-				<div>
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Geelige</a></li>
-						<li><a href="#">A-Z</a></li>
-						<li><a href="#">Contact</a></li>
-						<li>Text: <span>A</span> <span style="font-weight: bold;">A</span> <span style="background-color: black; color: white;">A</span> </li>
-					</ul>
-				</div>
-
-				<div>
-					<form action="#" method="POST">
-						<button>Find a School</button>
-						<input type="text" name="search">
-						<input type="submit" name="enviar" value="Ok">
-					</form>
-					<br>
-					<a href="#">Advanced Search</a>
-				</div>
-
-				<div>
-					<ul>
-						<li><a href="">Parents</a></li>
-						<li><a href="">Teachers</a></li>
-						<li><a href="">Schools & Colleges</a></li>
-						<li><a href="">Students</a></li>
-					</ul>
-				</div>
-			</div>
+		<div class = "logo">
+			<h1><a href=""><img src="https://media.istockphoto.com/photos/faculty-of-theology-of-the-university-of-stellenbosch-monochrome-picture-id1128952381"></a></h1>
 		</div>
+		<nav>
+			<ul class = "nav_list">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Geelige</a></li>
+				<li><a href="#">A-Z</a></li>
+				<li><a href="#">Contact</a></li>
+				<li>Text: <span>A</span> <span style="font-weight: bold;">A</span> <span style="background-color: black; color: white;">A</span> </li>
+			</ul>
+			<div>
+				<form action="#" method="POST">
+					<button>Find a School</button>
+					<input type="text" name="search">
+					<input type="submit" name="enviar" value="Ok">
+				</form>
+				<a href="#">Advanced Search</a>
+			</div>
+			<ul class = "nav_menu">
+				<li><a href="">Parents</a></li>
+				<li><a href="">Teachers</a></li>
+				<li><a href="">Schools & Colleges</a></li>
+				<li><a href="">Students</a></li>
+			</ul>
+		</nav>
 	</header>
 
 	<div class = "main_content">
 		<aside class = "content_left">
 			<img src="https://c.wallhere.com/photos/a4/8f/Gandalf_The_Lord_of_the_Rings_movies_Ian_McKellen_sepia_dark_background_simple_background_monochrome-260294.jpg!d" alt="Gandolf">
-			<ul>
-				<li><a href="">The Department</a></li>
-				<li><a href="">The Education System</a></li>
-				<li><a href="">News & Events</a></li>
-				<li><a href="">Publications</a></li>
-				<li><a href="">Circulars & Forms</a></li>
-				<li><a href="">Construction Documents</a></li>
+			<ul class="nav_menu">
+				<li><a href="#">The Department</a></li>
+				<li><a href="#">The Education System</a></li>
+				<li><a href="#">News & Events</a></li>
+				<li><a href="#">Publications</a></li>
+				<li><a href="#">Circulars & Forms</a></li>
+				<li><a href="#">Construction Documents</a></li>
 			</ul>
 
 			<div>
@@ -90,7 +83,7 @@
 					<div class = "main_news">
 						<table class = "date_table">
 							<tr>
-								<td>12 January 2012</td>
+								<td>12 January2012</td>
 								<td><a href="">DEIS Evolution reports published</a></td>
 							</tr>
 
@@ -110,8 +103,15 @@
 				</section>
 
 				<section class = "carousel">
-					<div>
-						<img src="https://www.futebolinterior.com.br/Imagem/2050400335/728x485" alt = ".">
+					<div class="carousel">
+					    <div class="item slide-in" id="item1"></div>
+					    <div class="item slide-in" id="item2"></div>
+					    <div class="item slide-in" id="item3"></div>
+					    <div class="controls">
+					        <a href="#item1" class="btn">•</a>
+					        <a href="#item2" class="btn">•</a>
+					        <a href="#item3" class="btn">•</a>
+					    </div>
 					</div>
 				</section>
 			</div>
@@ -119,15 +119,15 @@
 			<div>
 				<section class = "newsticker">
 					<div>
-						<h2>Newsticker</h2> <a href=""><span class="fas fa-bars"></span></a>
+						<h2>Newsticker</h2><a href=""><span class="fas fa-bars"></span></a>
 					</div>
 					<p>Submission entry for the SOLAS Consultation Paper closes at 5pm on Friday, 20th January 2012.</p>
 				</section>	
 
 				<section class = "spotlight">
 					<div>
-						<img src="https://www.futebolinterior.com.br/Imagem/2050400335/728x485" alt = ".">
-						<h1>Title of this small spotlight</h1>
+						<img src="imagem1.jpg" alt = ".">
+						<h2>Title of this<br>small spotlight</h2>
 					</div>
 				</section>
 			</div>
@@ -163,8 +163,8 @@
 
 				<section class = "minor_spotlight">
 					<div>
-						<img src="https://www.futebolinterior.com.br/Imagem/2050400335/728x485" alt = ".">
-						<h1>Second minor spotlight title</h1>
+						<img src="https://st4.depositphotos.com/1718940/20539/i/1600/depositphotos_205390648-stock-photo-physics-college-campus-building-logo.jpg" alt = ".">
+						<h2>Second minor<br>spotlight title</h2>
 					</div>
 				</section>
 			</div>
@@ -174,12 +174,12 @@
 	<hr>
 
 	<footer>
-		<div>
-			<a href="#">Feedback</a>
-			<a href="#">Using this website</a>
-			<a href="#">Acessibility statement</a>
-			<a href="#">www.Goy.ie</a>
-		</div>
+		<ul class="nav_list">
+			<li><a href="#">Feedback</a></li>
+			<li><a href="#">Using this website</a></li>
+			<li><a href="#">Acessibility statement</a></li>
+			<li><a href="#">www.Goy.ie</a></li>	
+		</ul>
 
 		<a href="#">Page Top</a>
 

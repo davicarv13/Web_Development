@@ -10,39 +10,61 @@
 }
 
 body{
-	margin: 0 40px;
+	margin: 20px 40px;
 }
 
-.header_box{
+h1{
+	font-size: 12pt;
+}
+
+header{
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 100vw;
-	height: 30vh;
-}
-.logo{
-	width: 20vw;
-	background-image: url(https://media.istockphoto.com/photos/faculty-of-theology-of-the-university-of-stellenbosch-monochrome-picture-id1128952381);
-	background-size: cover;
-	background-repeat:no-repeat;
-	background-origin: center;
 }
 
-.nav{
+.logo h1 a img{
+	width: 190px;
+}
+
+nav{
+	display: flex;
+	flex-direction: column;
+}
+
+nav *{
+	margin-bottom: 5px;
+}
+
+nav div{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.nav_list{
 	display: flex;
 	flex-direction: row;
-	align-content: space-between;
 }
 
-.nav div, .nav div ul{
+.nav_list li a{
+	color:#5ad1fc;
+	text-decoration: underline;
+}
+
+.nav_menu li{
+	border:1px solid black;
+	padding:5px 15px;
+}
+
+header .nav_menu li{
+	margin-right: 20px;
+}
+
+nav ul{
 	display: flex;
 	flex-direction: row;
-	justify-content: right;
-}
-
-.nav div, .nav ul *{
-	margin-left:10px;
+	justify-content: space-between;
 }
 
 .main_content{
@@ -70,7 +92,6 @@ body{
 .content_left div ul{
 	background: #cdcdcd;
 	padding: 10px;
-	list-style: disc;
 	border: 2px solid black;
 }
 
@@ -92,6 +113,10 @@ body{
 	flex-wrap: nowrap;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+.main div:last-child{
+	align-items: flex-start;
 }
 
 .main > div section{
@@ -132,7 +157,7 @@ body{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	line-height: 30px;
+	line-height: 20px;
 }
 
 .whatsNew .main_reports h2{
@@ -145,20 +170,8 @@ body{
 	margin-right: 20px;
 }
 
-.whatsNew .main_news{
-	display: flex;
-	flex-direction: column;
+.main_news{
 	margin-top: 20px;
-}
-
-.whatsNew .main_news div p{
-	display: inline-block;
-	width:200px;
-}
-
-.whatsNew .main_news div a{
-	text-decoration: underline;
-	font-weight: bolder;
 }
 
 .newsticker{
@@ -180,6 +193,7 @@ body{
 
 .date_table tr td:nth-of-type(1){
 	text-align: right;
+	padding-right: 15px;
 }
 
 .date_table tr td:nth-of-type(2){
@@ -195,17 +209,12 @@ body{
 	padding:10px;
 }
 
-.spotlight div p, .minor_spotlight div p{
-	margin-left: 5px;
+.spotlight div img, .minor_spotlight div img{
+	margin-right: 10px;
 }
 
 .spotlight img, .minor_spotlight img{
 	width:100px;
-}
-
-.carousel img{
-	width: 289px;
-	height: auto;
 }
 
 footer{
@@ -220,13 +229,13 @@ footer div a{
 	text-decoration: underline;
 }
 
-footer div a::after{
+footer .nav_list li::after{
 	content: "|";
 	margin: 0 10px;
 }
 
-footer div a:last-child{
-	content: "";
+footer .nav_list li:last-child::after{
+	content: " ";
 }
 
 footer > a::before{
